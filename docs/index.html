@@ -55,11 +55,14 @@ $(function($){
 			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
 			<ul>
 				<li><a href="index.html">ホーム</a></li>
+				<li><a href="index.html#oshirase">お知らせ</a></li>
 				<li><a href="index.html#ouboyoukou">応募要項</a></li>
+				<li><a href="index.html#ouboyoukou">サンプルプログラム</a></li>
 				<li><a href="index.html#juni">順位</a></li>
 				<li><a href="index.html#syousai">試合結果詳細</a></li>
 				<li><a href="index.html#kekka">コンテスト結果</a></li>
 				<li><a href="index.html#qa">Q&A</a></li>
+				<li><a href="index.html#jusyou">歴代プロコン受賞者</a></li>
 				<li><a href="index.html#toiawase">お問い合わせ</a></li>
 			</ul>
 		</nav>
@@ -77,52 +80,258 @@ $(function($){
 		</div><!-- /.slide -->
 		<h2>新着情報</h2>
 		<dl class="info">
-		   <dt><span>2019-06-XX</span></dt>
+		   <dt><span>2019-07-17</span></dt>
+		   <dd>
+				応募受付終了のお知らせ追加<br/>
+				コンテスト結果に参加人数追加
+		   </dd>
+		</dl>
+<!--
+		<dl class="info">
+		   <dt><span>2019-07-17</span></dt>
+		   <dd>
+				Q&A情報追加</br>
+				サンプルプログラムデータを社外からアクセスできるリンク追加
+		   </dd>
+		</dl>
+		<dl class="info">
+		   <dt><span>2019-07-02</span></dt>
+		   <dd>
+				Q&A情報追加
+		   </dd>
+		</dl>
+		<dl class="info">
+		   <dt><span>2019-06-18</span></dt>
+		   <dd>
+				歴代プロコン受賞者掲載追加<br/>
+				応募要項追加
+		   </dd>
+		</dl>
+		<dl class="info">
+		   <dt><span>2019-06-11</span></dt>
 		   <dd>
 				 2019年度　プログラミングコンテスト　ホームページ開設
 		   </dd>
 		</dl>
+-->
+		<div id="oshirase" class="service">
+			<h3>お知らせ</h3>
+			NATプログラミングコンテスト2019の受付は終了いたしまいた。<br/>
+			ご応募ありがとうございました。<br/>
+			結果は社員旅行(10/26)にて結果発表後、掲載いたします。<br/>
+			<br/>
+		</div>
 		<div id="ouboyoukou" class="service">
 			<h3>応募要項</h3>
-			ここに応募要項のリンクへの張ります。
+			★テーマ　　　　　：　NAT式プロ野球！～選べ最強ナイン～<br/>
+			★各賞・参加賞　　：　賞品が例年より豪華<br/>
+			　　　　　　　　　　　(ビギナー優勝/準優勝、オープン優勝/準優勝、<br/>
+			　　　　　　　　　　　ルーキー賞、社長賞等々、全員に参加賞あり)<br/>
+			★参加対象　　　　：　NAT全社員<br/>
+			★応募期間　　　　：　2019年8月30日（金）まで<br/>
+			★<a href="guide/01_コンテスト案内_応募要項.pdf">応募要項</a><br/>
+			★<a href="guide/02_コンテスト案内_コンテスト詳細.pdf">コンテスト詳細</a><br/>
+			★<a href="guide/03_コンテスト案内_paiza.IOの紹介.pdf">paiza.IOの紹介</a><br/>
+			<br/>
+		</div><!-- /.service -->
+		<div id="ouboyoukou" class="service">
+			<h3>サンプルプログラム</h3>
+			・ビギナー用<br/>
+			　・選手データ<br/>
+			　　・<a href="guide/program/data/Batter_Beginner.dat">野手データ (文字コード:UTF-8)</a><br/>
+			　　・<a href="guide/program/data/Pitcher_Beginner.dat">投手データ (文字コード:UTF-8)</a><br/>
+			　・チーム作成サンプルプログラム<br/>
+			　　・<a href="guide/program/sample/beginner_C/main.c">C (文字コード:UTF-8)</a><br/>
+			　　・<a href="guide/program/sample/beginner_cpp/main.cpp">C++ (文字コード:UTF-8)</a><br/>
+			　　・<a href="guide/program/sample/beginner_java/src/Main.java">JAVA (文字コード:UTF-8)</a><br/>
+			・オープン用<br/>
+			　・選手データ<br/>
+			　　・<a href="guide/program/data/Batter_Open.dat">野手データ (文字コード:UTF-8)</a><br/>
+			　　・<a href="guide/program/data/Pitcher_Open.dat">投手データ (文字コード:UTF-8)</a><br/>
+			　・チーム作成サンプルプログラム<br/>
+			　　・<a href="guide/program/sample/open_C/main.c">C (文字コード:UTF-8)</a><br/>
+			　　・<a href="guide/program/sample/open_cpp/main.cpp">C++ (文字コード:UTF-8)</a><br/>
+			　　・<a href="guide/program/sample/open_java/src/Main.java">JAVA (文字コード:UTF-8)</a><br/>
+			・試合プログラム<br/>
+			　・<a href="guide/program/game/main.cpp">試合プログラム(文字コード:UTF-8)</a><br/>
+			　・<a href="guide/program/team/xxx_BatFirstTeam.dat">チームデータサンプル1(文字コード:UTF-8)</a><br/>
+			　・<a href="guide/program/team/xxx_BatSecondTeam.dat">チームデータサンプル2(文字コード:UTF-8)</a><br/>
+			※社外からサンプルプログラムを取得したい場合は以下のページから取得してください。<br/>
+			　https://github.com/procon2019aw6kg0kd/sample_program/<br/>
+			　(↑のページにアクセスして、サンプルプログラムディレクトリのリンクを押下する。 )
 		</div><!-- /.service -->
 		<div id="juni" class="staff">
 			<h3>順位</h3>
-			試合結果の順位（概要）を載せます。
+			試合結果の順位（概要）を載せる予定です。(工事中)
 		</div><!-- /.staff -->
 		<div id="syousai" class="staff">
 			<h3>試合結果詳細</h3>
-			試合結果詳細を載せます。
+			試合結果詳細を載せる予定です。(工事中)
 		</div><!-- /.staff -->
 		<div id="kekka" class="staff">
 			<h3>コンテスト結果</h3>
-			コンテスト結果を載せます。
+			<br/>
+			■参加人数<br/>
+			　全体 … 37名(内、両クラス参加1名)</br>
+			　・ビギナー　…　09名</br>
+			　・オープン　…　29名</br>
+			<br/>
+			　所属別</br>
+			　・基盤部　　…　03名</br>
+			　・業務部　　…　00名</br>
+			　・湘一　　　…　01名</br>
+			　・湘ニ　　　…　03名</br>
+			　・湘三　　　…　13名</br>
+			　・湘四　　　…　01名</br>
+			　・つく技　　…　05名</br>
+			　・阪技　　　…　08名</br>
+			　・名古屋　　…　03名</br>
+			<br/>
+			※表彰結果については、社員旅行(10/26)後に掲載します。<br/>
+			<br/>
 		</div><!-- /.staff -->
 		<div id="qa" class="staff">
 			<h3>Q&A</h3>
-			よせられた質問のうち、代表的な質問／回答を掲載いたします。
+			よせられた質問のうち、代表的な質問／回答を掲載いたします。<br/>
+			<br/>
+			■オープン/ビギナー共通<br/>
+<br/>
+　Q1. 評価用の選手データの打率、コストについて<br/>
+　　　著しく高かったり、低かったりする場合もありますか？<br/>
+　　　それとも現実的な値ですか？<br/>
+<br/>
+　A1. 評価用のデータ内容は非公開です。<br/>
+<br/>
+<br/>
+　Q2. 評価用の選手データのコストの上限値も100ですか？<br/>
+<br/>
+　A2. はい。<br/>
+<br/>
+<br/>
+■オープン<br/>
+<br/>
+　Q1. 選手データのパラメータ"本塁打率"について<br/>
+　　　試合プログラムのヒット判定ではパラメータは使わず、1-(1,2,3塁打率)<br/>
+　　　で計算しておりパラメータと誤差がある場合があります。なぜですか？<br/>
+<br/>
+　A1. 選手抽出に"本塁打率"を使いたい方向けにパラメータに入れてあります。<br/>
+　　　ただ仰る通り、配布用のパラメータ"本塁打率"は小数第3位で丸めてし<br/>
+　　　まったため、本塁打率を使う場合は計算して使った方が正確です。<br/>
+　　　こちらの不備で申し訳ありません。評価用のパラメータはプログラムと<br/>
+　　　同様、1-(1,2,3塁打率)といたします。 <br/>
+<br/>
+　Q2．ルーキー賞の受賞条件は？<br/>
+<br/>
+　A2．ルーキー賞は<br/>
+　　「オープンクラスで頑張ったルーキー、ルーキーを牽引した先輩社員」<br/>
+　　に対して贈られる賞です。<br/>
+<br/>
+　　ルーキー賞の受賞条件は、以下の通りです。<br/>
+　　・オープンクラスに参加<br/>
+　　・社会人１～３年目の社員(ルーキー)がチーム内に１人以上いること<br/>
+　　・シリーズ優勝／シリーズ準優勝／リーグ優勝をしていないチーム（※）<br/>
+　　・上記条件を満たした勝率の一番高いチーム<br/>
+<br/>
+　　※チーム内のルーキーがビギナークラスで優勝／準優勝していても、受賞対象となります。<br/>
+<br/>
+		</div><!-- /.staff -->
+		<div id="jusyou" class="staff">
+			<h3>歴代プロコン受賞者</h3>
+			2018---------------------------------<br/>
+			　■文字列検索(個人戦)<br/>
+			　　優勝　　　　　　　湘一　　長﨑 博道さん<br/>
+			　　準優勝　　　　　　つく技　永田 公一さん<br/>
+			　　社長賞　　　　　　つく技　松下 綾さん<br/>
+			　　ルーキー賞　　　　湘二　　荊尾 輝さん<br/>
+			<br/>
+			　■迷路／組合わせパズル／ナンバータッチ(団体戦)<br/>
+			　　総合優勝　　　　　つく技　チーム：つく１<br/>
+			　　　　　　　　　　　　惣野代 昌己さん(代表)<br/>
+			　　　　　　　　　　　　黒澤 浩一さん<br/>
+			　　　　　　　　　　　　松下 綾さん<br/>
+			　　　　　　　　　　　　奥村 航さん<br/>
+			　　　　　　　　　　　　本橋 大輔さん<br/>
+			　　　　　　　　　　　　佐藤 梢さん<br/>
+			<br/>
+			　　総合準優勝　　　　湘二　　チーム：2038年問題<br/>
+			　　　　　　　　　　　　小早川 大さん(代表)<br/>
+			　　　　　　　　　　　　平野 翔さん<br/>
+			　　　　　　　　　　　　鵜瀬 凪さん<br/>
+			<br/>
+			　　個別賞(迷路)　　　つく技　チーム：つく１<br/>
+			<br/>
+			　　個別賞　　　　　　湘四　　チーム：塩味<br/>
+			　　(組合わせパズル)　　糸畑美暖さん(代表)<br/>
+			　　　　　　　　　　　　庄司一雄さん<br/>
+			<br/>
+			　　個別賞　　　　　　湘三　　チーム：湘三<br/>
+			　　(ナンバータッチ)　　小門都澄さん(代表)<br/>
+			　　　　　　　　　　　　小竹光則さん<br/>
+			　　　　　　　　　　　　北條明史さん<br/>
+			　　　　　　　　　　　　守屋知明さん<br/>
+			　　　　　　　　　　　　小野拓未さん<br/>
+			<br/>
+			2017---------------------------------<br/>
+			　■CordinGame Smash The Code（オープン）<br/>
+			　　優勝　　　　　　　阪技　　北川 陽子さん<br/>
+			　　準優勝　　　　　　阪技　　藤原 正樹さん<br/>
+			　　社長特別賞　　　　名古屋　仁藤 陽希さん<br/>
+			　　ルーキー賞　　　　阪技　　猪原 唯史さん<br/>
+			　<br/>
+			　■Tron Battle（ビギナー）<br/>
+			　　優勝　　　　　　　阪技　　千葉 哲也さん<br/>
+			　　準優勝　　　　　　つく技　北嶋 優子さん<br/>
+			　　基盤部Ｂ賞　　　　湘一　　松岡 淳一さん<br/>
+			　　ルーキー賞　　　　湘一　　國宗 智寛さん<br/>
+			　<br/>
+			2016---------------------------------<br/>
+			　■Hit & Blow<br/>
+			　　優勝　　　　　　　湘二　　村上 晃一さん<br/>
+			　　準優勝　　　　　　つく技　鈴木 佑輔さん<br/>
+			　　社長特別賞　　　　阪技　　北村 朋子さん<br/>
+			　　ルーキー賞　　　　湘一　　大坪 隼弥さん<br/>
+			　<br/>
+			2015---------------------------------<br/>
+			　■Not100（オープン）<br/>
+			　[ソースコード]<br/>
+			　　1位(BestEngineer) 湘一　　清水 淳史さん<br/>
+			　　2位 　　　　　　　つく技　細川 環さん<br/>
+			　　3位 　　　　　　　つく技　正木 健雄さん<br/>
+			　[対戦](2名同時優勝)<br/>
+			　　優勝　　　　　　　湘三　　伊藤 潤さん<br/>
+			　　　　　　　　　　　湘四　　望月 慶輝さん<br/>
+			　■ナンプレ（ビギナー）<br/>
+			　　優勝　　　　　　　湘四　　望月 慶輝さん<br/>
+			　　社長賞　　　　　　つく技　片岡 優博さん<br/>
+			　<br/>
+			------------------------------------<br/>
+			※所属部署は当時のものです。<br/>
 		</div><!-- /.staff -->
 		<div id="toiawase" class="staff">
 			<h3>お問い合わせ</h3>
-			<a href="mailto:procon2019@nat.co.jp">procon2019@nat.co.jp</a>
+			プロコン2019実行委員会<br/>
+			mail:<a href="mailto:procon2019@nat.co.jp">procon2019@nat.co.jp</a>
 		</div><!-- /.staff -->
 	</div><!-- /#main -->
 </div><!-- /#contents -->
-<!--
+
 <footer>
 	<div class="footmenu">
 		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="index.html">メニュー・料金</a></li>
-			<li><a href="index.html">ご予約</a></li>
-			<li><a href="index.html">ブログ</a></li>
-			<li><a href="index.html">お問い合わせ</a></li>
-			<li><a href="sample.html">SAMPLE</a></li>
+			<li><a href="index.html">ホーム</a></li>
+			<li><a href="index.html#oshirase">お知らせ</a></li>
+			<li><a href="index.html#ouboyoukou">応募要項</a></li>
+			<li><a href="index.html#ouboyoukou">サンプルプログラム</a></li>
+			<li><a href="index.html#juni">順位</a></li>
+			<li><a href="index.html#syousai">試合結果詳細</a></li>
+			<li><a href="index.html#kekka">コンテスト結果</a></li>
+			<li><a href="index.html#qa">Q&A</a></li>
+			<li><a href="index.html#jusyou">歴代プロコン受賞者</a></li>
+			<li><a href="index.html#toiawase">お問い合わせ</a></li>
 		</ul>
 	</div><!-- /.footmenu -->
-	<div class="copyright">Copyright &#169; 20XX - 20XX SITENAME All Rights Reserved.</div><!-- /.copyright -->
 </footer>
--->
+
 <div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
 </body>
 </html>
